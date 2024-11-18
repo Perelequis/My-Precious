@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Em Breve</title>
+  <!-- Ícone para a aba do navegador -->
+  <link rel="icon" href="maiu.png" type="image/png">
+  <style>
+    /* Reset de margens e padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Configuração do corpo da página */
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+
+    /* Estilo do container central */
+    .message {
+      text-align: center;
+      animation: pulse 3s infinite;
+    }
+
+    /* Estilo do texto principal */
+    .message h1 {
+      font-size: 4rem;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                   0 0 20px rgba(255, 255, 255, 0.6), 
+                   0 0 30px rgba(255, 255, 255, 0.4);
+    }
+
+    /* Estilo de subtítulo (opcional) */
+    .message p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #cccccc;
+    }
+
+    /* Animação de brilho */
+    @keyframes pulse {
+      0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                     0 0 20px rgba(255, 255, 255, 0.6), 
+                     0 0 30px rgba(255, 255, 255, 0.4);
+      }
+      50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1), 
+                     0 0 30px rgba(255, 255, 255, 0.8), 
+                     0 0 40px rgba(255, 255, 255, 0.6);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <h1>Em breve</h1>
+    <p>Estamos preparando algo especial para você</p>
+  </div>
+</body>
+</html>
